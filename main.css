@@ -1,4 +1,4 @@
-body {height: 4000px;}
+
 
 header {position: fixed; display: flex; z-index: 3; top: 0; left: 0; width: 100%; height: 300px;}
 header .background_color {position: absolute; left: 0; top: 0; width: 100%; height: 50px; opacity: 0.3; background: #f2f2f2;}
@@ -25,7 +25,7 @@ header .language a:hover {background: #042e6f; color: #f2f2f2;}
 
 .row {margin-top: 0;}
 
-#container1 {display: block; width: 100%; height: 1000px; margin: 150px auto;}
+#container1 {display: block; width: 100%; margin: 150px auto;}
 #container2 {display: block; width: 50%; height: 50px; margin: 80px auto 100px auto; text-align: center; }
 #container2 h2 { letter-spacing: 36px; color: #FF6633; font-weight: bold; margin: 0;}
 #container2 h2 span {color: #660099;}
@@ -39,3 +39,22 @@ header .language a:hover {background: #042e6f; color: #f2f2f2;}
 #serviceblock a > div {position: relative; padding: 40px 20px 0px; height: 170px;}
 #serviceblock a:hover  {background: #aaa8aa;}
 #serviceblock a p {padding: 13px 0 0; font-size: 13px; color: #747774; line-height: 18px;}
+
+#container3 {display: block; width: 100%; height: 1000px; margin: 150px auto;}
+#container4 {display: block; width: 100%; height: 600px; margin: 50px auto;}
+#container4 video {width: 100%; height: 100%; margin: auto;}
+.container h3 {font-size: 26px; color: #222; font-weight: bold; line-height: 28px; text-align: center;}
+.container p {margin: 0 0 0 0; padding: 40px 0 0; font-size: 17px; color: #747774; line-height: 18px; text-align: center;}
+.btn_more {display: inline-block; margin: 50px 0 30px 0; width: 140px; height: 44px; border: 1px solid #042e6f; box-sizing: border-box; font-size: 16px; color: 042e6f; line-height: 44px; text-align: center; letter-spacing: 7px;}
+.btns.center {text-align: center;}
+
+footer {width: 100%; height: 200px; background : #272f3c;}
+footer #hei {height: 200px;}
+footer .col-9 {float: left; line-height: 100%;}
+footer .col-9 div a {margin: 0 10px 0 0; font-size: 13px; color: #fff;}
+footer .col-9 .p-1 {padding: 13px 0 0; margin-top: 10px; line-height: 21px; font-size: 13px; color: #747b85;}
+footer .col-9 .p-1 span {padding: 0 13px 0 0;}
+footer .col-3 {float: right; padding: 0 0 0 100px;}
+footer .col-3 a {color: #747b85;}
+footer .col-3 a span {padding: 0 10px 0 0;}
+footer .col-3 a img {width: 40px; height: 40px; text-align: left; border-radius: 8px;}
