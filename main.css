@@ -37,7 +37,9 @@ header .language a:hover {background: #042e6f; color: #f2f2f2;}
 #serviceblock img {width: 100%; height: 170px; transform: scale(1); transition: all 0.3s;}
 #serviceblock a:hover img {transform: scale(1.1);}
 #serviceblock a > div {position: relative; padding: 40px 20px 0px; height: 170px;}
-#serviceblock a:hover  {background: #aaa8aa;}
+#serviceblock a:hover  {background: #aaa8aa; text-decoration: none;}
+#serviceblock a:hover .card-body .card-title {color: #FFFFFF;}
+#serviceblock a:hover .card-body .card-text {color: #FFFFFF;}
 #serviceblock a p {padding: 13px 0 0; font-size: 13px; color: #747774; line-height: 18px;}
 
 #container3 {display: block; width: 100%; height: 1000px; margin: 150px auto;}
