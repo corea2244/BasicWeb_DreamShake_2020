@@ -1,5 +1,6 @@
 header {position: fixed; display: flex; z-index: 3; top: 0; left: 0; width: 100%; height: 50px;}
 header .background_color {position: absolute; left: 0; top: 0; width: 100%; height: 50px; opacity: 0.3; background: #f2f2f2;}
+header .background_color.shadowy {box-shadow: 5px 5px 5px gray;}
 header .blank {width: 5%;flex: 1;}
 header .logo img {position: relative; width: 200px; height: 50px; flex: 8; z-index: 3;}
 header .menu {width: 100%; margin: 0 40px 0 40px; flex: 12;}
@@ -34,18 +35,29 @@ header .language a:hover {background: #042e6f; color: #f2f2f2;}
 .bread_crums ul {display: none; position: absolute; z-index: 10; width: 241px; left: -1px; box-sizing: border-box; border: 1px solid #dfdfdf; padding: 10px 0; background: #fff;}
 .bread_crums ul a {display: block; height: 35px; text-indent: 26px; line-height: 35px; font-size: 15px; color: #333;}
 .bread_crums ul a:hover {color: #808080;}
+.bread_crums > div > .no-image > a {background: none;}
 
-.contents {display: block; width: 100%; padding: 0 auto;}
-.contents #snb {float: left; width: 201px; margin: 30px 56px 0 56px;}
+.contents {}
+.contents #snb {display: block; float: left; width: 201px; margin: 30px 56px 0 56px;}
 .contents #snb h2 {padding: 49px 0 0; text-align: center; background: #333f52; color: #fff; font-size: 21px; font-weight: normal; width: 200px; height: 140px;}
 .contents #snb h2 span {display: block; padding: 13px 0 0; color: #8f939b; font-size: 12px;}
 .contents #snb ul {list-style: none; padding: 0;}
-.contents #snb li a {display: block; position: relative; height: 53px; border-bottom: 1px solid #8f939b; line-height: 53px; text-indent: 25px; color: #303030;}
-.contents #snb li a:hover {color: #1354bb; text-indent: 61px; font-size: 15px; text-decoration: none;}
-.contents #snb li a:hover:after {content: ""; display: block; position: absolute; left: 0; top: 0; width: 45px; height: 54px; background: url(../Dreamshake/sub_downarrow_button.png) no-repeat center #1354bb;}
-.contents #contents {display: block; width: 650px; padding : 60px 0 100px 100px; float: left; border-left: 1px solid #dfdfdf;}
+.contents #contents {display: block; width: 700px; padding : 60px 0 100px 100px; float: left; border-left: 1px solid #dfdfdf;}
 .contents #contents .h2 {font-size: 34px; color: #000; margin-bottom: 50px;}
 .contents #contents .greetings .image_greeting {margin-bottom: 50px;}
+.contents #contents .card-body .title {background: #FF99CC; text-align: center; border-radius: 20px; color: #FFFFFF; font-weight: bold;}
+.contents #contents .card-body .sub_title {font-size: 14px; font-weight: bold; line-height: 30px; margin-left: 10px;}
+.contents #contents .card-body .sub_text {font-size: 11px; margin-left: 20px;}
+.contents #contents .card-deck .card-header {text-align: center; font-weight: bold; font-size: 21px; letter-spacing: 4px;}
+.contents #contents .card-deck .card-title {font-size: 15px; font-weight: bold; }
+.contents #contents .card-deck .card-text {font-size: 10px; line-height: 5px; margin-left: 10px;}
+
+.contents #contents .service1_photo {display: inline-block; clear: both; margin-bottom: 50px;}
+.contents #contents .service1_photo .photo {float: left; margin-right: 30px;}
+.contents #contents .service1_photo .photo img { width: 200px; height: 200px; border-radius: 30px;}
+.contents #contents .service1_photo .photo_content {float: left; font-size: 13px; margin-top: 50px;}
+.contents #contents .service1_photo .photo_content h2 {margin-bottom: 40px; color: #003300; font-size: 23px; font-weight: bold;}
+
 
 footer {clear: both; width: 100%; height: 200px; background : #272f3c;}
 footer #hei {height: 200px;}
@@ -53,7 +65,7 @@ footer .col-9 {float: left; line-height: 100%;}
 footer .col-9 div a {margin: 0 10px 0 0; font-size: 13px; color: #fff;}
 footer .col-9 .p-1 {padding: 13px 0 0; margin-top: 10px; line-height: 21px; font-size: 13px; color: #747b85;}
 footer .col-9 .p-1 span {padding: 0 13px 0 0;}
-footer .col-3 {float: right; padding: 0 0 0 100px;}
+footer .col-3 { padding: 0 0 0 100px;}
 footer .col-3 a {color: #747b85;}
 footer .col-3 a span {padding: 0 10px 0 0;}
 footer .col-3 a img {width: 40px; height: 40px; text-align: left; border-radius: 8px;}
@@ -78,4 +90,12 @@ footer .col-3 a img {width: 40px; height: 40px; text-align: left; border-radius:
 @keyframes top {
   0%{ color:#FFFFFF; }
   100%{ color:#000033; }
+}
+
+.contents #snb li a {display: block; position: relative; height: 53px; border-bottom: 1px solid #8f939b; line-height: 53px; text-indent: 25px; color: #303030;}
+.contents #snb li a:hover {color: #1354bb; text-indent: 61px; font-size: 15px; text-decoration: none; animation-name: snb_menu; animation-duration: 0.5s;}
+.contents #snb li a:hover:after {content: ""; display: block; position: absolute; left: 0; top: 0; width: 45px; height: 54px; background: url(../Dreamshake/sub_downarrow_button.png) no-repeat center #1354bb;}
+@keyframes snb_menu {
+  0% {color: #303030; text-indent: 25px;}
+  100% {color: #1354bb; text-indent: 61px;}
 }

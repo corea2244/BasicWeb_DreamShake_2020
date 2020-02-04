@@ -2,6 +2,7 @@
 
 header {position: fixed; display: flex; z-index: 3; top: 0; left: 0; width: 100%; height: 50px;}
 header .background_color {position: absolute; left: 0; top: 0; width: 100%; height: 50px; opacity: 0.3; background: #f2f2f2;}
+header .background_color.shadowy {box-shadow: 5px 5px 5px gray;}
 header .blank {width: 5%;flex: 1;}
 header .logo img {position: relative; width: 200px; height: 50px; flex: 8; z-index: 3;}
 header .menu {width: 100%; margin: 0 40px 0 40px; flex: 12;}
@@ -33,6 +34,7 @@ header .language a:hover {background: #042e6f; color: #f2f2f2;}
 #serviceblock > .card {display: inline-block;}
 #serviceblock .card {overflow: hidden;}
 #serviceblock .card > a {box-sizing: border-box;}
+#serviceblock .card > a > .img-cover {width: 100%; height: 170px; padding: 0; overflow: hidden;}
 #serviceblock .card > a > .images {box-sizing: border-box;}
 #serviceblock img {width: 100%; height: 170px; transform: scale(1); transition: all 0.3s;}
 #serviceblock a:hover img {transform: scale(1.1);}
