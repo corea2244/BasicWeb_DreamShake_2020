@@ -37,7 +37,7 @@ header .language a:hover {background: #042e6f; color: #f2f2f2;}
 .bread_crums ul a:hover {color: #808080;}
 .bread_crums > div > .no-image > a {background: none;}
 
-.contents {}
+.contents:after {content: ""; display: block; clear: both;}
 .contents #snb {display: block; float: left; width: 201px; margin: 30px 56px 0 56px;}
 .contents #snb h2 {padding: 49px 0 0; text-align: center; background: #333f52; color: #fff; font-size: 21px; font-weight: normal; width: 200px; height: 140px;}
 .contents #snb h2 span {display: block; padding: 13px 0 0; color: #8f939b; font-size: 12px;}
