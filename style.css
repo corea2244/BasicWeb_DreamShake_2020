@@ -1,0 +1,113 @@
+
+
+header {position: fixed; display: flex; z-index: 3; top: 0; left: 0; width: 100%; height: 50px;}
+header .background_color {position: absolute; left: 0; top: 0; width: 100%; height: 50px; opacity: 0.3; background: #f2f2f2;}
+header .background_color.shadowy {box-shadow: 1px 1px 3px gray;}
+header .blank {width: 5%;flex: 1;}
+header .logo img {position: relative; width: 200px; height: 50px; flex: 8; z-index: 3;}
+header .menu {width: 100%; margin: 0 40px 0 40px; flex: 12;}
+header .menu nav {position: relative; display: flex; z-index: 3; margin: 0; padding: 0; width: 100%; height: 50px;}
+header .menu nav .blank {flex: 1;}
+header .menu nav ul {position: relative; flex: 3; height: 50px; margin: 0; padding: 0; text-align: center; font-size: 20px; vertical-align: middle;}
+header .menu nav ul li {display: inline-block; position: relative; height: 50px; line-height: 50px; font-weight: 800;}
+header .menu nav ul li a {display: block; position: relative; height: 50px; color: #f2f2f2; text-decoration: none;}
+header .menu nav ul li a:hover {color: #042e6f; }
+header .menu nav ul li a:after {content: ""; position: absolute; left: 50%; bottom: -1px; width: 0; height: 2px; background: #042e6f; transition: all 0.5s;}
+header .menu nav ul li a:hover:after {left: 0; width: 100%;}
+header .menu nav > ul {display: flex; overflow: hidden;}
+header .menu nav > ul:hover {overflow: visible;}
+header .menu nav > ul > li {display: inline-block; position: relative; flex: 1;}
+header .menu nav > ul ul  {position: absolute; padding-top: 25px; width: 100%;}
+header .menu nav > ul ul li {width: 100%;}
+header .menu nav > ul ul a {font-size: 13px;}
+header .language {position: relative; display: inline-block; z-index: 3; margin-right: 20px; width: 100px; height: 50px;text-align: center;}
+header .language a {display: inline-block; margin-top: 7px; padding: 3px 10px 0 10px; height: 30px; color: #f2f2f2; text-decoration: none; border: 1px solid #f2f2f2; border-radius: 10px;}
+header .language a:hover {background: #042e6f; color: #f2f2f2;}
+
+header .total {display: block; position: absolute; z-index: 10;right: 0; top: 25px; width: 30px; height: 5px; transform: translate(-50%,-50%); text-decoration: none;}
+header .total span {display: block; position: absolute; top: 50%; width: 100%; height: 5px; background: rgba(225,245,136,1); color: transparent; transform: translate(0,-50%); transition: all 0.5s;}
+header .total span:before, .total span:after {content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 5px; background: rgba(225,245,136,1); transition: all 0.5s;}
+header .total span:before {top: -10px;}
+header .total span:after {top: 10px;}
+header .total.on span {background: rgba(225,245,136,0);}
+header .total.on span:before {top: 0px; transform: rotate(45deg); background: #800000;}
+header .total.on span:after {top: 0px; transform: rotate(-45deg); background: #800000;}
+header .second_menubar {position: fixed; position: relative; left: 0; display: block; width: 0; height: 744px; box-shadow: 1px 1px 3px 1px gray; opacity: 0; background: #fffff0; color: #FFFFFF; transition: all 0.5s;}
+header .second_menubar.on {width: 200px; opacity: 0.8;}
+header .second_menubar > ul {display: block; margin-top: 100px;}
+header .second_menubar > ul > li {font-size: 20px; margin-bottom: 20px;}
+header .second_menubar > ul > li li {font-size: 13px;}
+header .second_menubar li a {text-decoration: none;}
+
+
+footer {width: 100%; height: 200px; background : #272f3c;}
+footer #hei {height: 200px;}
+footer .col-9 {float: left; line-height: 100%;}
+footer .col-9 div a {margin: 0 10px 0 0; font-size: 13px; color: #fff;}
+footer .col-9 .p-1 {padding: 13px 0 0; margin-top: 10px; line-height: 21px; font-size: 13px; color: #747b85;}
+footer .col-9 .p-1 span {padding: 0 13px 0 0;}
+footer .col-3 {float: right; padding: 0 0 0 100px;}
+footer .col-3 a {color: #747b85;}
+footer .col-3 a span {padding: 0 10px 0 0;}
+footer .col-3 a img {width: 40px; height: 40px; text-align: left; border-radius: 8px;}
+
+#topbutton {
+  position: fixed;
+  bottom: -60px;
+  right: 2%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #042e6f;
+  z-index: 11;
+  text-align: center;
+  line-height: 45px;
+  background: #FF0033;
+  transition: bottom ease-in-out 0.5s;
+  }
+#topbutton.visible {
+  bottom:2%;
+  }
+#topbutton > a {text-decoration: none; color: #FFFFFF; width: 50px; height: 50px; display: inline-block; }
+#topbutton > a:hover {color: #000033; animation-name: top; animation-duration: 1s;}
+@keyframes top {
+  0%{ color:#FFFFFF; }
+  100%{ color:#000033; }
+}
+
+
+@media(max-width:1199px){
+  .p_3 {display: block;}
+}
+
+@media(max-width:991px){
+  #container2 h2 { font-size: 25px; letter-spacing: 30px;}
+  #serviceblock .card h5 {font-size: 0.9rem;}
+  #serviceblock a p {font-size: 10px;}
+  #serviceblock .col {padding-right: 5px; padding-left: 5px;}
+  .container p {font-size: 13px;}
+  .p_2 {display: block;}
+  header .menu nav ul {font-size: 15px;}
+  header .menu nav > ul ul a {font-size: 10px;}
+}
+
+@media(max-width:825px) {
+  header .menu nav > ul ul a {font-size: 8px;}
+}
+
+@media(max-width:767px) {
+  header .menu {display: none;}
+  header .language {display: none;}
+  #container2 h2 span {display: block; margin-top: 20px;}
+  .row-cols-1>* {max-width: 50%;}
+  footer #hei .col-9 .p_5 {display: block;}
+  #container2 h2 {font-size: 20px;}
+  .p_6 {display: block;}
+  footer #hei .col-3 {display: none;}
+  .bread_crums {max-width: 700px;}
+  .contents #contents {border-left: none;}
+}
+
+@media(min-width:768px) {
+  header .total {display: none;}
+  header .second_menubar {display: none;}
+}

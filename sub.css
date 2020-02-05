@@ -1,28 +1,6 @@
-header {position: fixed; display: flex; z-index: 3; top: 0; left: 0; width: 100%; height: 50px;}
-header .background_color {position: absolute; left: 0; top: 0; width: 100%; height: 50px; opacity: 0.3; background: #f2f2f2;}
-header .background_color.shadowy {box-shadow: 5px 5px 5px gray;}
-header .blank {width: 5%;flex: 1;}
-header .logo img {position: relative; width: 200px; height: 50px; flex: 8; z-index: 3;}
-header .menu {width: 100%; margin: 0 40px 0 40px; flex: 12;}
-header .menu nav {position: relative; display: flex; z-index: 3; margin: 0; padding: 0; width: 100%; height: 50px;}
-header .menu nav .blank {flex: 1;}
-header .menu nav ul {position: relative; flex: 3; height: 50px; margin: 0; padding: 0; text-align: center; font-size: 20px; vertical-align: middle;}
-header .menu nav ul li {display: inline-block; position: relative; width: 100px; height: 50px; line-height: 50px; font-weight: 800;}
-header .menu nav ul li a {display: block; position: relative; height: 50px; color: #f2f2f2; text-decoration: none;}
-header .menu nav ul li a:hover {color: #042e6f; }
-header .menu nav ul li a:after {content: ""; position: absolute; left: 50%; bottom: -1px; width: 0; height: 2px; background: #042e6f; transition: all 0.5s;}
-header .menu nav ul li a:hover:after {left: 0; width: 100%;}
-header .menu nav > ul {display: flex; overflow: hidden;}
-header .menu nav > ul:hover {overflow: visible;}
-header .menu nav > ul > li {display: inline-block; position: relative; flex: 1;}
-header .menu nav > ul ul  {position: absolute; padding-top: 25px; width: 100%;}
-header .menu nav > ul ul li {width: 100%;}
-header .menu nav > ul ul a {font-size: 13px;}
-header .language {position: relative; display: inline-block; z-index: 3; margin-right: 20px; width: 100px; height: 50px;text-align: center;}
-header .language a {display: inline-block; margin-top: 7px; padding: 3px 10px 0 10px; height: 30px; color: #f2f2f2; text-decoration: none; border: 1px solid #f2f2f2; border-radius: 10px;}
-header .language a:hover {background: #042e6f; color: #f2f2f2;}
 
-.bread_crums {display: block; width: 100%; padding: 0 auto; border-bottom: 1px solid #dfdfdf;}
+
+.bread_crums {display: block; width: 100%; padding: 0 auto;}
 .bread_crums > div:after {content: ""; display: block; clear: both;}
 .bread_crums > div {border-bottom: 1px solid #dfdfdf; background: #fff;}
 .bread_crums > div > * {float: left;}
@@ -51,6 +29,7 @@ header .language a:hover {background: #042e6f; color: #f2f2f2;}
 .contents #contents .card-deck .card-header {text-align: center; font-weight: bold; font-size: 21px; letter-spacing: 4px;}
 .contents #contents .card-deck .card-title {font-size: 15px; font-weight: bold; }
 .contents #contents .card-deck .card-text {font-size: 10px; line-height: 5px; margin-left: 10px;}
+.contents #contents .mb-3 {width: 600px;}
 
 .contents #contents .service1_photo {display: inline-block; clear: both; margin-bottom: 50px;}
 .contents #contents .service1_photo .photo {float: left; margin-right: 30px;}
@@ -58,39 +37,6 @@ header .language a:hover {background: #042e6f; color: #f2f2f2;}
 .contents #contents .service1_photo .photo_content {float: left; font-size: 13px; margin-top: 50px;}
 .contents #contents .service1_photo .photo_content h2 {margin-bottom: 40px; color: #003300; font-size: 23px; font-weight: bold;}
 
-
-footer {clear: both; width: 100%; height: 200px; background : #272f3c;}
-footer #hei {height: 200px;}
-footer .col-9 {float: left; line-height: 100%;}
-footer .col-9 div a {margin: 0 10px 0 0; font-size: 13px; color: #fff;}
-footer .col-9 .p-1 {padding: 13px 0 0; margin-top: 10px; line-height: 21px; font-size: 13px; color: #747b85;}
-footer .col-9 .p-1 span {padding: 0 13px 0 0;}
-footer .col-3 { padding: 0 0 0 100px;}
-footer .col-3 a {color: #747b85;}
-footer .col-3 a span {padding: 0 10px 0 0;}
-footer .col-3 a img {width: 40px; height: 40px; text-align: left; border-radius: 8px;}
-
-#topbutton {
-  position: fixed;
-  bottom: -60px;
-  right: 2%;
-  width: 50px;
-  height: 50px;
-  border: 1px solid #042e6f;
-  text-align: center;
-  line-height: 45px;
-  background: #FF0033;
-  transition: bottom ease-in-out 0.5s;
-  }
-#topbutton.visible {
-  bottom:2%;
-  }
-#topbutton > a {text-decoration: none; color: #FFFFFF; width: 50px; height: 50px; display: inline-block; }
-#topbutton > a:hover {color: #000033; animation-name: top; animation-duration: 1s;}
-@keyframes top {
-  0%{ color:#FFFFFF; }
-  100%{ color:#000033; }
-}
 
 .contents #snb li a {display: block; position: relative; height: 53px; border-bottom: 1px solid #8f939b; line-height: 53px; text-indent: 25px; color: #303030;}
 .contents #snb li a:hover {color: #1354bb; text-indent: 61px; font-size: 15px; text-decoration: none; animation-name: snb_menu; animation-duration: 0.5s;}

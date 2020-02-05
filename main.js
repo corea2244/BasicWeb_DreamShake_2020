@@ -1,6 +1,11 @@
 
   $(document).ready(function(){
 
+    $('.total').click(function(){
+      $(this).toggleClass('on');
+      $('header .second_menubar').toggleClass('on');
+    });
+
     var origin_menu_coment_color;
     var origin_lang_color;
     var origin_lang_border;
