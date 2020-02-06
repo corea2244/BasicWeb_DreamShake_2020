@@ -7,6 +7,39 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="sub.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+    @media(min-width:1199px) {
+      .bread_crums .no-image ul li {display: none;}
+      .bread_crums .no-image ul {opacity: 0;}
+    }
+    @media(max-width:1199px) {
+      .contents #snb {display: none;}
+      .contents #contents {width: 100%; padding: 60px 0 100px 180px;}
+      .bread_crums > div > .no-image > a {background: url("../Dreamshake/downarrowbutton.png") no-repeat right 20px center;}
+      .bread_crums .no-image ul {opacity: 1;}
+      .bread_crums .no-image ul a:hover li {display: block;}
+    }
+    @media(max-width:769px) {
+      .contents #contents .mb-3 {width: 600px;}
+      .contents #contents {width: 100%; padding: 60px 0 100px 60px;}
+      .card-deck {width: 600px; margin-left: 0;}
+      .card-deck .card {margin-left: auto; margin-right: auto; width: 600px;}
+    }
+    @media(max-width:602px) {
+      .bread_crums div > div > a {width: 150px;}
+      .bread_crums > div > .no-image > a {background: url("../Dreamshake/downarrowbutton.png") no-repeat right 0 center;}
+      .bread_crums ul {width: 152px;}
+    }
+    @media(max-width:541px) {
+      .contents #contents {width: 100%; padding : 0 15px; margin-top: 30px; margin-bottom: 30px;}
+      .contents #contents .h2 {text-align: center;}
+      .contents #contents .greetings img {width: 250px;}
+      .contents #contents .greetings {margin-left: 70px;}
+      .contents #contents .service1_photo .photo {margin-right: 0; margin-left: 90px;}
+      .contents #contents .service1_photo .photo_content {text-align: center; width: 100%;}
+      .container {padding: 0;}
+    }
+    </style>
   </head>
   <body>
     <header id="header">
@@ -32,7 +65,7 @@
                 <li><a href="service4.html">분석제공</a></li>
               </ul>
             </li>
-            <li><a href="media.html">Media</a></li>
+            <li><a href="media1.html">Media</a></li>
           </ul>
           <div class="blank"></div>
         </nav>
@@ -57,7 +90,7 @@
               <li><a href="service4.html">분석제공</a></li>
             </ul>
           </li>
-          <li><a href="media.html">MEDIA</a></li>
+          <li><a href="media1.html">MEDIA</a></li>
         </ul>
       </div>
     </header>
@@ -85,11 +118,17 @@
           <ul>
             <li><a href="about_ceo_greeting.html">About</a></li>
             <li><a href="service1.html">Service</a></li>
-            <li><a href="media.html">Media</a></li>
+            <li><a href="media1.html">Media</a></li>
           </ul>
         </div>
         <div class="no-image">
-          <a href="about_ceo_greeting.html">하이라이트제공</a>
+          <a href="service2.html">하이라이트제공</a>
+          <ul>
+            <li><a href="service1.html">영상제공</a></li>
+            <li><a href="service2.html">하이라이트제공</a></li>
+            <li><a href="service3.html">기록제공</a></li>
+            <li><a href="service4.html">분석제공</a></li>
+          </ul>
         </div>
       </div>
     </div>

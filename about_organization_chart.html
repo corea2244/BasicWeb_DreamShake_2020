@@ -17,20 +17,22 @@
       .bread_crums > div > .no-image > a {background: url("../Dreamshake/downarrowbutton.png") no-repeat right 20px center;}
       .bread_crums .no-image ul {opacity: 1;}
       .bread_crums .no-image ul a:hover li {display: block;}
+      .contents #contents {width: 780px; padding: 60px 0 100px 180px;}
     }
-    @media(max-width:767px) {
-      .contents #contents .mb-3 {width: 400px;}
-      .contents #contents {width: 500px;}
-      .card-deck {display: block;}
-      .card-deck .card {margin-left: auto; margin-right: auto;}
+    @media(max-width:769px) {
+      .contents #contents .mb-3 {width: 600px;}
+      .contents #contents {width: 650px; padding: 60px 0 100px 60px;}
+      .container {padding: 0;}
+      .card-deck {width: 100%; margin-left: 0;}
+      .card-deck .card {margin-left: auto; margin-right: auto; width: 600px;}
     }
     @media(max-width:602px) {
       .bread_crums div > div > a {width: 150px;}
       .bread_crums > div > .no-image > a {background: url("../Dreamshake/downarrowbutton.png") no-repeat right 0 center;}
       .bread_crums ul {width: 152px;}
-      .contents #contents {width: 380px; padding: 0;}
-      .contents #contents .mb-3 {width: 300px; margin-left: 40px;}
-      .card-deck {width: 300px;}
+      .contents #contents {width: 100%; padding: 0; margin-top: 30px; margin-bottom: 30px;}
+      .contents #contents .mb-3 {width: 300px; margin-left: auto; margin-right: auto;}
+      .contents #contents .h2 {text-align: center;}
     }
     </style>
   </head>
@@ -58,7 +60,7 @@
                 <li><a href="service4.html">분석제공</a></li>
               </ul>
             </li>
-            <li><a href="media.html">Media</a></li>
+            <li><a href="media1.html">Media</a></li>
           </ul>
           <div class="blank"></div>
         </nav>
@@ -83,7 +85,7 @@
               <li><a href="service4.html">분석제공</a></li>
             </ul>
           </li>
-          <li><a href="media.html">MEDIA</a></li>
+          <li><a href="media1.html">MEDIA</a></li>
         </ul>
       </div>
     </header>
@@ -111,7 +113,7 @@
           <ul>
             <li><a href="about_ceo_greeting.html">About</a></li>
             <li><a href="service1.html">Service</a></li>
-            <li><a href="media.html">Media</a></li>
+            <li><a href="media1.html">Media</a></li>
           </ul>
         </div>
         <div class="no-image">
@@ -187,33 +189,36 @@
             </div>
           </div>
         </div>
-        <div class="card-deck">
-          <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-            <div class="card-header">개발팀</div>
-            <div class="card-body">
-              <h5 class="card-title">송지호</h5>
-              <p class="card-text">웹/앱 개발 10년차</p>
-              <p class="card-text">한동대학교 정보통신대학원 석사 졸업</p>
-              <h5 class="card-title">서남진</h5>
-              <p class="card-text">이미지 프로세싱, 머신러닝</p>
-              <p class="card-text">한동대학교 전산전자공학부 재학</p>
-              <h5 class="card-title">이현섭</h5>
-              <p class="card-text">이미지 프로세싱, 머신러닝</p>
-              <p class="card-text">한동대학교 전산전자공학부 재학</p>
-              <h5 class="card-title">이강희</h5>
-              <p class="card-text">이미지 프로세싱, 머신러닝</p>
-              <p class="card-text">한동대학교 기계제어공학부 재학</p>
+        <div class="container">
+          <div class="card-deck row">
+            <div class="card text-white bg-secondary mb-3 col-sm-6" style="max-width: 18rem;">
+              <div class="card-header">개발팀</div>
+              <div class="card-body">
+                <h5 class="card-title">송지호</h5>
+                <p class="card-text">웹/앱 개발 10년차</p>
+                <p class="card-text">한동대학교 정보통신대학원 석사 졸업</p>
+                <h5 class="card-title">서남진</h5>
+                <p class="card-text">이미지 프로세싱, 머신러닝</p>
+                <p class="card-text">한동대학교 전산전자공학부 재학</p>
+                <h5 class="card-title">이현섭</h5>
+                <p class="card-text">이미지 프로세싱, 머신러닝</p>
+                <p class="card-text">한동대학교 전산전자공학부 재학</p>
+                <h5 class="card-title">이강희</h5>
+                <p class="card-text">이미지 프로세싱, 머신러닝</p>
+                <p class="card-text">한동대학교 기계제어공학부 재학</p>
+              </div>
             </div>
-          </div>
-          <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-            <div class="card-header">디자인팀</div>
-            <div class="card-body">
-              <h5 class="card-title">김은지</h5>
-              <p class="card-text">시각디자인</p>
-              <p class="card-text">한동대학교 콘텐츠융합디자인학부 재학</p>
+            <div class="card text-white bg-dark mb-3 col-sm-6" style="max-width: 18rem;">
+              <div class="card-header">디자인팀</div>
+              <div class="card-body">
+                <h5 class="card-title">김은지</h5>
+                <p class="card-text">시각디자인</p>
+                <p class="card-text">한동대학교 콘텐츠융합디자인학부 재학</p>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
     <footer>
